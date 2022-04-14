@@ -14,7 +14,6 @@ html = getHTML("http://books.toscrape.com/")
 
 soup = BeautifulSoup(html,'html.parser')
 table = soup.find('li',attrs = {'class':'col-xs-6 col-sm-4 col-md-3 col-lg-3'})
-rawrows = []
 filledRow = []
 #print(table)
 
